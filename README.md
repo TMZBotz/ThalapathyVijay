@@ -1,8 +1,8 @@
 <p align="center">
-  <img src="https://telegra.ph/file/6fa70325813885809a64a.jpg" alt="The Movie Provider Bot Logo">
+  <img src="https://graph.org/file/fd4c3ba434b8228b4501c.jpg" alt="Mr Leo Das Logo">
 </p>
 <h1 align="center">
-  <a href="https://telegram.me/TheMovieProviderBot">THE MOVIE PROVIDER BOT</a>
+  <a href="https://t.me/ItachiUchiha_Filter_Bot">ItachiUchiha Filter Bot</a>
 </h1>
 
 ![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=WELCOME+TO+THE-MOVIE-PROVIDER-BOT;A+SIMPLE+AND+POWERFUL+BOT!;A+BOT+WITH+CUSTOM+URL+SHORTNER;AND+CUSTOM+TUTORIAL!;ALSO+HAVE+STREAM+ONLINE;AND+FAST+DOWNLOAD+FEATURE!;AND+MANY+MORE+FEATURES!)
@@ -165,16 +165,9 @@ python3 bot.py
 
 <hr>
 
-
-## Thanks to 
- - Thanks To [HP](https://t.me/DeltedFromEarth) for customising this amazing [Repo](https://github.com/HarshalPurohitEdits/TheMovieProviderBot).
- - Thanks To Dan For His Awesome [Library](https://github.com/pyrogram/pyrogram)
- - Thanks To [EvamariaTG](https://raw.githubusercontent.com/EvamariaTG) for their awesome [EvaMaria Bot](https://raw.githubusercontent.com/EvamariaTG/EvaMaria)
- - Thanks To [Joelkb](https://github.com/Joelkb) for their awesome repo [DqFileDonor](https://github.com/Joelkb/DQ-the-file-donor)
-
 ## Note 🏷️
  
-* [![Contact Developer](https://img.shields.io/static/v1?label=Contact+Developer&message=On+Telegram&color=critical)](https://telegram.me/DeletedFromEarth)
+* [![Contact Developer]
 
 [Note To A So Called Dev](https://telegram.dog/subin_works/203): 
 
