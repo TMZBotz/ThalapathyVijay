@@ -34,9 +34,9 @@ STREAM_API = (environ.get('STREAM_API', '1bc9fe7b87fd246a19d0e5b10be262607b79ee8
 STREAMHTO = (environ.get('STREAMHTO', 'https://t.me/TamilMovieszUpdate/21'))
 
 # Admins, Channels & Users
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1572929036').split()]
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002105619071').split()] #Channel id for auto indexing ( make sure bot is admin )
-auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
+auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '1572929036').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 PREMIUM_USER = [int(user) if id_pattern.search(user) else user for user in environ.get('PREMIUM_USER', '1572929036').split()]
 auth_channel = environ.get('AUTH_CHANNEL', '-1002009707466') #Channel / Group Id for force sub ( make sure bot is admin )
