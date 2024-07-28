@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://graph.org/file/fd4c3ba434b8228b4501c.jpg" alt="Mr Leo Das Logo">
+  <img src="https://graph.org/file/d50d86c3517238e8acccb.jpg" alt="Iᴛᴀᴄʜɪ Uᴄʜɪʜᴀ Logo">
 </p>
 <h1 align="center">
   <a href="https://t.me/ItachiUchiha_Filter_Bot">ItachiUchiha Filter Bot</a>
