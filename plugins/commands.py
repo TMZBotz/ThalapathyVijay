@@ -64,7 +64,7 @@ async def start(client, message):
             gtxt = "Gᴏᴏᴅ Eᴠᴇɴɪɴɢ 👋"
         else:
             gtxt = "Gᴏᴏᴅ Nɪɢʜᴛ 👋"
-        m=await message.reply_text("<i>Wᴇʟᴄᴏᴍᴇ Tᴏ <b>Iᴛᴀᴄʜɪ Uᴄʜɪʜᴀ ʙᴏᴛ Bᴏᴛ</b>.\nʜᴏᴘᴇ ʏᴏᴜ'ʀᴇ ᴅᴏɪɴɢ ᴡᴇʟʟ...</i>")
+        m=await message.reply_text("<i>Wᴇʟᴄᴏᴍᴇ Tᴏ <b>Iᴛᴀᴄʜɪ Uᴄʜɪʜᴀ Bᴏᴛ</b>.\nHᴏᴘᴇ Yᴏᴜ'ʀᴇ Dᴏɪɴɢ Wᴇʟʟ...</i>")
         await asyncio.sleep(0.4)
         await m.edit_text("👀")
         await asyncio.sleep(0.5)
@@ -134,7 +134,7 @@ async def start(client, message):
             gtxt = "Gᴏᴏᴅ Eᴠᴇɴɪɴɢ 👋"
         else:
             gtxt = "Gᴏᴏᴅ Nɪɢʜᴛ 👋"
-        m=await message.reply_text("<i>Wᴇʟᴄᴏᴍᴇ Tᴏ <b>Iᴛᴀᴄʜɪ Uᴄʜɪʜᴀ ʙᴏᴛ Bᴏᴛ</b>.\nʜᴏᴘᴇ ʏᴏᴜ'ʀᴇ ᴅᴏɪɴɢ ᴡᴇʟʟ...</i>")
+        m=await message.reply_text("<i>Wᴇʟᴄᴏᴍᴇ Tᴏ <b>Iᴛᴀᴄʜɪ Uᴄʜɪʜᴀ Bᴏᴛ</b>.\nHᴏᴘᴇ Yᴏᴜ'ʀᴇ Dᴏɪɴɢ Wᴇʟʟ...</i>")
         await asyncio.sleep(0.4)
         await m.edit_text("👀")
         await asyncio.sleep(0.5)
@@ -213,7 +213,7 @@ async def start(client, message):
                                 InlineKeyboardButton('🚀 Fᴀꜱᴛ Dᴏᴡɴʟᴏᴀᴅ / Wᴀᴛᴄʜ Oɴʟɪɴᴇ 📺', callback_data=f'generate_stream_link:{file_id}'),
                             ],
                             [
-                                InlineKeyboardButton('☆ Jᴏɪɴ Uᴘᴅᴀᴛᴇꜱ Cʜᴀɴɴᴇʟ ☆', url=f'https://t.me/TamilMoviesz_HD') #Don't change anything without contacting me @LazyDeveloperr
+                                InlineKeyboardButton('☆ Jᴏɪɴ Uᴘᴅᴀᴛᴇꜱ Cʜᴀɴɴᴇʟ ☆', url=f'https://t.me/TamilMoviesz_HD') 
                             ]
                         ]
                     )
@@ -232,7 +232,7 @@ async def start(client, message):
                                 InlineKeyboardButton('🚀 Fᴀꜱᴛ Dᴏᴡɴʟᴏᴀᴅ / Wᴀᴛᴄʜ Oɴʟɪɴᴇ 📺', callback_data=f'generate_stream_link:{file_id}'),
                             ],
                             [
-                                InlineKeyboardButton('☆ Jᴏɪɴ Uᴘᴅᴀᴛᴇꜱ Cʜᴀɴɴᴇʟ ☆', url=f'https://t.me/TamilMoviesz_HD') #Don't change anything without contacting me @LazyDeveloperr
+                                InlineKeyboardButton('☆ Jᴏɪɴ Uᴘᴅᴀᴛᴇꜱ Cʜᴀɴɴᴇʟ ☆', url=f'https://t.me/TamilMoviesz_HD') 
                             ]
                         ]
                     )
@@ -300,7 +300,7 @@ async def start(client, message):
         is_valid = await check_token(client, userid, token)
         if is_valid == True:
             await message.reply_text(
-                text=f"<b>Hey {message.from_user.mention}, You are Successfully Verified !\nNow you have unlimited access for all movies till today midnight.</b>",
+                text=f"<b>Hey {message.from_user.mention}, You are Successfully Verified !\nNow You Have Unlimited Access For All Movies Till Today Midnight.</b>",
                 protect_content=True
             )
             await verify_user(client, userid, token)
@@ -421,7 +421,7 @@ async def start(client, message):
               InlineKeyboardButton('🚀 Fᴀꜱᴛ Dᴏᴡɴʟᴏᴀᴅ / Wᴀᴛᴄʜ Oɴʟɪɴᴇ 📺', callback_data=f'generate_stream_link:{file_id}'),
              ],
              [
-              InlineKeyboardButton('☆ Jᴏɪɴ Uᴘᴅᴀᴛᴇꜱ Cʜᴀɴɴᴇʟ ☆', url=f'https://t.me/TamilMoviesz_HD') #Don't change anything without contacting me @LazyDeveloperr
+              InlineKeyboardButton('☆ Jᴏɪɴ Uᴘᴅᴀᴛᴇꜱ Cʜᴀɴɴᴇʟ ☆', url=f'https://t.me/TamilMoviesz_HD') 
              ]
             ]
         )
@@ -539,9 +539,9 @@ async def start(client, message):
 
     if not await check_verification(client, message.from_user.id) and VERIFY == True:
         btn = [[
-            InlineKeyboardButton("♻️ ᴄʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ ᴠᴇʀɪꜰʏ ♻️", url=await get_token(client, message.from_user.id, f"https://telegram.me/{temp.U_NAME}?start="))
+            InlineKeyboardButton("♻️ Cʟɪᴄᴋ Hᴇʀᴇ Tᴏ Vᴇʀɪꜰʏ ♻️", url=await get_token(client, message.from_user.id, f"https://telegram.me/{temp.U_NAME}?start="))
         ],[
-            InlineKeyboardButton("⁉️ ʜᴏᴡ ᴛᴏ ᴠᴇʀɪꜰʏ ⁉️", url=HOWTOVERIFY)
+            InlineKeyboardButton("⁉️ Hᴏᴡ Tᴏ Vᴇʀɪꜰʏ ⁉️", url=HOWTOVERIFY)
         ]]
         await message.reply_text(
             text="<b>👋 ʜᴇʏ ᴛʜᴇʀᴇ,\n\n📌 <u>ʏᴏᴜ'ʀᴇ ɴᴏᴛ ᴠᴇʀɪꜰɪᴇᴅ ᴛᴏᴅᴀʏ, ᴘʟᴇᴀꜱᴇ ᴠᴇʀɪꜰʏ ᴀɴᴅ ɢᴇᴛ ᴜɴʟɪᴍɪᴛᴇᴅ ᴀᴄᴄᴇꜱꜱ ᴛɪʟʟ ɴᴇxᴛ ᴠᴇʀɪꜰɪᴄᴀᴛɪᴏɴ</u>.</b>",
@@ -850,9 +850,9 @@ async def settings(client, message):
         
 
         btn = [[
-                InlineKeyboardButton("👤 ᴏᴘᴇɴ ɪɴ ᴘʀɪᴠᴀᴛᴇ ᴄʜᴀᴛ 👤", callback_data=f"opnsetpm#{grp_id}")
+                InlineKeyboardButton("👤 Oᴘᴇɴ Iɴ Pʀɪᴠᴀᴛᴇ Cʜᴀᴛ 👤", callback_data=f"opnsetpm#{grp_id}")
               ],[
-                InlineKeyboardButton("👥 ᴏᴘᴇɴ ʜᴇʀᴇ 👥", callback_data=f"opnsetgrp#{grp_id}")
+                InlineKeyboardButton("👥 Oᴘᴇɴ Hᴇʀᴇ 👥", callback_data=f"opnsetgrp#{grp_id}")
               ]]
 
         reply_markup = InlineKeyboardMarkup(buttons)
