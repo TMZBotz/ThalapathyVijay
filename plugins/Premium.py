@@ -1,5 +1,5 @@
-# SPECIAL THANKS FOR THESE AMAZING CODES
-# SPECIAL THANKS FOR MODIFYING THESE AMAZING CODES
+# SPECIAL THANKS FOR Pk Bro 😊
+# SPECIAL THANKS FOR Pk Bro 😊
 
 from datetime import timedelta
 import pytz
@@ -151,5 +151,5 @@ async def plan(client, message):
     ]]
     await message.reply_photo(photo="https://graph.org/file/e828aafa13d8b426fc401.jpg", caption=script.PREMIUM_TEXT.format(message.from_user.mention), reply_markup=InlineKeyboardMarkup(btn))
     
-# SPECIAL THANKS FOR THESE AMAZING CODES
-# SPECIAL THANKS FOR MODIFYING THESE AMAZING CODES 
+# SPECIAL THANKS FOR Pk Bro 😊
+# SPECIAL THANKS FOR Pk Bro 😊 
