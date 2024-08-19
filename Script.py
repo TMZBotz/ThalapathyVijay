@@ -257,17 +257,23 @@ Tʜᴀɴᴋ Yᴏᴜ Fᴏʀ Hᴇʟᴘɪɴɢ Iɴ Tʜɪꜱ Aᴍᴀᴢɪɴɢ Rᴏʟ�
     » Mᴏᴠɪᴇ Rᴇϙᴜᴇsᴛ 24×7 : @TamilCinemaRequest <b>""" 
 
     IMDB_TEMPLATE_TXT = """
-<b>ʜᴇʏ {message.from_user.mention}, ʜᴇʀᴇ ɪꜱ ᴛʜᴇ ʀᴇꜱᴜʟᴛꜱ ꜰᴏʀ ʏᴏᴜʀ ǫᴜᴇʀʏ {search}.
+<b>Query: {qurey}
 
-🏷 Title</b>: <a href={url}>{title}</a>
+IMDb Data:
+
+<b>🏷 Title</b>: <a href={url}>{title}</a>
 🎭 Genres: {genres}
 📆 Year: <a href={url}/releaseinfo>{year}</a>
 🌟 Rating: <a href={url}/ratings>{rating}</a> / 10 (based on {votes} user ratings.)
 ☀️ Languages : <code>{languages}</code>
 📀 RunTime: {runtime} Minutes
 📆 Release Info : {release_date}
+🎛 Countries : <code>{countries}</code>
 
-💗 Pᴏᴡᴇʀᴇᴅ Bʏ : {message.chat.title}</b>
+
+⏰Result Shown in: {remaining_seconds} <i>seconds</i> 🔥
+
+Requested by : {message.from_user.mention}</b>
 """
     
 
