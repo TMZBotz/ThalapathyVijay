@@ -8,7 +8,7 @@ Hᴇʀᴇ Is Tʜᴇ Hᴇʟᴘ Fᴏʀ Mʏ Cᴏᴍᴍᴀɴᴅs.</b>"""
 
     ABOUT_TXT = """<b><blockquote>⍟───[ MY Dᴇᴛᴀɪʟꜱ ]───⍟</blockquote>
     
-‣ Mʏ Nᴀᴍᴇ : <a href=https://t.me/{}>{}</a>
+‣ Mʏ Nᴀᴍᴇ : <a href=https://t.me/ItachiUchiha_Filter_Bot>Iᴛᴀᴄʜɪ Uᴄʜɪʜᴀ Bᴏᴛ</a>
 ‣ Mʏ Bᴇsᴛ Fʀɪᴇɴᴅ : <a href='tg://settings'>Tʜɪs Pᴇʀsᴏɴ</a> 
 ‣ Dᴇᴠᴇʟᴏᴘᴇʀ : <a href='https://t.me/TMZ_ADMIN_BOT'>Ƙυƚƚყ</a> 
 ‣ Lɪʙʀᴀʀʏ : <a href='https://docs.pyrogram.org/'>Pʏʀᴏɢʀᴀᴍ</a> 
@@ -49,26 +49,30 @@ Nᴀᴍᴇ - {}
 
 Bʏ @ItachiUchiha_Filter_Bot"""
 
-    ALRT_TXT = """ʜᴇʟʟᴏ {},
-ᴛʜɪꜱ ɪꜱ ɴᴏᴛ ʏᴏᴜʀ ᴍᴏᴠɪᴇ ʀᴇǫᴜᴇꜱᴛ,
-ʀᴇǫᴜᴇꜱᴛ ʏᴏᴜʀ'ꜱ..."""
+    ALRT_TXT = """Hᴇʟʟᴏ {},
+Tʜɪꜱ Iꜱ Nᴏᴛ Yᴏᴜʀ Mᴏᴠɪᴇ Rᴇǫᴜᴇꜱᴛ,
+Rᴇǫᴜᴇꜱᴛ Yᴏᴜʀ'ꜱ..."""
 
     OLD_ALRT_TXT = """ʜᴇʏ {},
-ʏᴏᴜ ᴀʀᴇ ᴜꜱɪɴɢ ᴏɴᴇ ᴏꜰ ᴍʏ ᴏʟᴅ ᴍᴇꜱꜱᴀɢᴇꜱ, 
-ᴘʟᴇᴀꜱᴇ ꜱᴇɴᴅ ᴛʜᴇ ʀᴇǫᴜᴇꜱᴛ ᴀɢᴀɪɴ."""
+Yᴏᴜ Aʀᴇ Uꜱɪɴɢ Oɴᴇ Oꜰ Mʏ Oʟᴅ Mᴇꜱꜱᴀɢᴇꜱ, 
+Pʟᴇᴀꜱᴇ Sᴇɴᴅ Tʜᴇ Rᴇǫᴜᴇꜱᴛ Aɢᴀɪɴ."""
 
     CUDNT_FND = """I Cᴏᴜʟᴅɴ'ᴛ Fɪɴᴅ Aɴʏᴛʜɪɴɢ Rᴇʟᴀᴛᴇᴅ Tᴏ {}
 Dɪᴅ Yᴏᴜ Mᴇᴀɴ Aɴʏ Oɴᴇ Oꜰ Tʜᴇꜱᴇ? 👇"""
 
     I_CUDNT = """<b>Sᴏʀʀʏ Nᴏ Fɪʟᴇs Wᴇʀᴇ Fᴏᴜɴᴅ Fᴏʀ Yᴏᴜʀ Rᴇǫᴜᴇꜱᴛ {} 😕
 
-Mᴏᴠɪᴇ Nᴏᴛ Aᴠᴀɪʟᴀʙʟᴇ Rᴇᴀsᴏɴ :
+Cʜᴇᴄᴋ Yᴏᴜʀ Sᴘᴇʟʟɪɴɢ Iɴ Gᴏᴏɢʟᴇ Aɴᴅ Tʀʏ Aɢᴀɪɴ 😃
 
-1) O.ᴛ.ᴛ ᴏʀ ᴅᴠᴅ ɴᴏᴛ ʀᴇʟᴇᴀsᴇᴅ
+Mᴏᴠɪᴇ Rᴇǫᴜᴇꜱᴛ Fᴏʀᴍᴀᴛ 👇
 
-2) Tʏᴘᴇ Nᴀᴍᴇ Wɪᴛʜ Yᴇᴀʀ
+Exᴀᴍᴘʟᴇ : Uncharted or Uncharted 2022 or Uncharted En
 
-3) Mᴏᴠɪᴇ Is Nᴏᴛ Aᴠᴀɪʟᴀʙʟᴇ Iɴ Tʜᴇ Dᴀᴛᴀʙᴀsᴇ Rᴇᴘᴏʀᴛ Tᴏ Aᴅᴍɪɴs @TMZ_ADMIN_BOT</b>"""
+Sᴇʀɪᴇꜱ Rᴇǫᴜᴇꜱᴛ Fᴏʀᴍᴀᴛ 👇
+
+Exᴀᴍᴘʟᴇ : Loki S01 or Loki S01E04 or Lucifer S03E24
+
+🚯 Dᴏɴᴛ Uꜱᴇ ➠ ':(!,./)</b>"""
 
     I_CUD_NT = """<b>Sᴏʀʀʏ Nᴏ Fɪʟᴇs Wᴇʀᴇ Fᴏᴜɴᴅ Fᴏʀ Yᴏᴜʀ Rᴇǫᴜᴇꜱᴛ {} 😕
 
