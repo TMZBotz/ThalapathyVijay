@@ -31,7 +31,7 @@ CODE = (environ.get('CODE', 'https://graph.org/file/e828aafa13d8b426fc401.jpg'))
 #stream link shortner
 STREAM_SITE = (environ.get('STREAM_SITE', 'modijiurl.com'))
 STREAM_API = (environ.get('STREAM_API', '1bc9fe7b87fd246a19d0e5b10be262607b79ee89'))
-STREAMHTO = (environ.get('STREAMHTO', 'https://t.me/TamilMovieszUpdate/21'))
+STREAMHTO = (environ.get('STREAMHTO', 'https://t.me/TamilCinema_Update/4'))
 
 # Admins, Channels & Users
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1572929036').split()]
@@ -39,7 +39,7 @@ CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHAN
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '1572929036').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 PREMIUM_USER = [int(user) if id_pattern.search(user) else user for user in environ.get('PREMIUM_USER', '1572929036').split()]
-auth_channel = environ.get('AUTH_CHANNEL', '-1002009707466') #Channel / Group Id for force sub ( make sure bot is admin )
+auth_channel = environ.get('AUTH_CHANNEL', '-1001992659627') #Channel / Group Id for force sub ( make sure bot is admin )
 auth_grp = environ.get('AUTH_GROUP')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
@@ -56,7 +56,7 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Verify
 VERIFY = bool(environ.get('VERIFY', False)) # Verification On ( True ) / Off ( False )
-HOWTOVERIFY = environ.get('HOWTOVERIFY', 'https://t.me/TamilMovieszUpdate/21') # How to open tutorial link for verification
+HOWTOVERIFY = environ.get('HOWTOVERIFY', 'https://t.me/TamilCinema_Update/4') # How to open tutorial link for verification
 
 # Others
 SHORTLINK_URL = environ.get('SHORTLINK_URL', 'modijiurl.com')
