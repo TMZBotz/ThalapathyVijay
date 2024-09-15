@@ -121,8 +121,11 @@ async def start(client, message):
                     InlineKeyboardButton('〄 Cᴏᴍᴍᴀɴᴅꜱ ', callback_data='help'),
                     InlineKeyboardButton('✇ Aʙᴏᴜᴛ ', callback_data='about')
                 ],[
+                    InlineKeyboardButton('🔍 Most Search', callback_data="mostsearch"),
+                    InlineKeyboardButton('⚡ Top Trending', callback_data="trending")
+                ],[
                     InlineKeyboardButton('✨ Bᴜʏ Sᴜʙꜱᴄʀɪᴘᴛɪᴏɴ : Rᴇᴍᴏᴠᴇ Aᴅꜱ ✨', callback_data="premium_info")
-                  ]]
+                  ]
         reply_markup = InlineKeyboardMarkup(buttons)
         current_time = datetime.now(pytz.timezone(TIMEZONE))
         curr_time = current_time.hour        
