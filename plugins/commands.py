@@ -5,15 +5,12 @@ import asyncio
 import pytz
 from Script import script
 from datetime import datetime
-from database.refer import referdb
 from pyrogram import Client, filters, enums
 from pyrogram.errors import ChatAdminRequired, FloodWait
 from pyrogram.types import *
 from database.ia_filterdb import Media, get_file_details, unpack_new_file_id, get_bad_files
 from database.users_chats_db import db
-from database.trending import Jisshu_TOP
-from database.config_db import mdb
-from info import CHANNELS, ADMINS, AUTH_CHANNEL, LOG_CHANNEL, DATABASE_URI, REFER_PICS, PICS, BATCH_FILE_CAPTION, CUSTOM_FILE_CAPTION, PROTECT_CONTENT, CHNL_LNK, GRP_LNK, REQST_CHANNEL, SUPPORT_CHAT_ID, SUPPORT_CHAT, MAX_B_TN, VERIFY, SHORTLINK_API, SHORTLINK_URL, TUTORIAL, IS_TUTORIAL, PREMIUM_USER, PICS, SUBSCRIPTION
+from info import CHANNELS, ADMINS, AUTH_CHANNEL, LOG_CHANNEL, PICS, BATCH_FILE_CAPTION, CUSTOM_FILE_CAPTION, PROTECT_CONTENT, CHNL_LNK, GRP_LNK, REQST_CHANNEL, SUPPORT_CHAT_ID, SUPPORT_CHAT, MAX_B_TN, VERIFY, HOWTOVERIFY, SHORTLINK_API, SHORTLINK_URL, TUTORIAL, IS_TUTORIAL, PREMIUM_USER, PICS, SUBSCRIPTION
 from utils import get_settings, get_size, is_req_subscribed, save_group_settings, temp, verify_user, check_token, check_verification, get_token, get_shortlink, get_tutorial
 from database.connections_mdb import active_connection
 # from plugins.pm_filter import ENABLE_SHORTLINK
@@ -21,76 +18,11 @@ import re, asyncio, os, sys
 import json
 import base64
 logger = logging.getLogger(__name__)
-# https://t.me/JISSHU_BOTS
-# https://t.me/Jisshu_support
+
 TIMEZONE = "Asia/Kolkata"
 BATCH_FILES = {}
 
 EMOJIS = [ "👀", "😱", "🔥", "😍", "🎉", "🥰", "😇", "⚡" ]
-
-
-movie_series_db = Jisshu_TOP(DATABASE_URI)
-
-
-@Client.on_callback_query(filters.regex("mostsearch"))
-async def topsearch_callback(client, callback_query):
-    
-    def is_alphanumeric(string):
-        return bool(re.match('^[a-zA-Z0-9 ]*$', string))
-    
-    limit = 20  # Default limit or get from somewhere else if needed
-
-    top_messages = await mdb.get_top_messages(limit)
-
-    # Use a set to ensure unique messages (case insensitive).
-    seen_messages = set()
-    truncated_messages = []
-
-    for msg in top_messages:
-        # Convert message to lower case for uniqueness check
-        msg_lower = msg.lower()
-        if msg_lower not in seen_messages and is_alphanumeric(msg):
-            seen_messages.add(msg_lower)
-            
-            if len(msg) > 35:
-                truncated_messages.append(msg[:32] + "...")
-            else:
-                truncated_messages.append(msg)
-
-    # Create keyboard layout with 2 messages per row
-    keyboard = [truncated_messages[i:i+2] for i in range(0, len(truncated_messages), 2)]
-    
-    reply_markup = ReplyKeyboardMarkup(
-        keyboard, 
-        one_time_keyboard=True, 
-        resize_keyboard=True, 
-        placeholder="Most searches of the day"
-    )
-    
-    await callback_query.message.reply_text("<b>Hᴇʀᴇ ɪꜱ ᴛʜᴇ ᴍᴏꜱᴛ ꜱᴇᴀʀᴄʜᴇꜱ ʟɪꜱᴛ 👇</b>", reply_markup=reply_markup)
-    await callback_query.answer()
-    
-@Client.on_callback_query(filters.regex(r"^trending$"))
-async def suggestion_click_2(client, query):
-    # Get movie and series names from the database for the second suggestion
-    movie_series_names = await movie_series_db.get_movie_series_names(1)
-    
-    # Check if there are any names in the database
-    if not movie_series_names:
-        await query.message.reply("Tʜᴇʀᴇ ᴀʀᴇ ɴᴏ ᴍᴏᴠɪᴇ ᴏʀ sᴇʀɪᴇs ɴᴀᴍᴇs ᴀᴠᴀɪʟᴀʙʟᴇ ғᴏʀ ᴛʜᴇ ᴛᴏᴘ sᴇᴀʀᴄʜᴇs.")
-        return
-
-    # Create rows of buttons, with each row containing two buttons
-    buttons = [movie_series_names[i:i + 2] for i in range(0, len(movie_series_names), 2)]
-
-    # Create a ReplyKeyboardMarkup with buttons arranged in a grid layout
-    spika = ReplyKeyboardMarkup(
-        buttons,
-        resize_keyboard=True
-    )
-
-    # Reply to the user with the keyboard
-    await query.message.reply("<b>Here Is The Top Trending List 👇</b>", reply_markup=spika)
 
 @Client.on_message(filters.command("start") & filters.incoming)
 async def start(client, message):
@@ -125,7 +57,7 @@ async def start(client, message):
                     InlineKeyboardButton('⚡ Top Trending', callback_data="trending")
                 ],[
                     InlineKeyboardButton('✨ Bᴜʏ Sᴜʙꜱᴄʀɪᴘᴛɪᴏɴ : Rᴇᴍᴏᴠᴇ Aᴅꜱ ✨', callback_data="premium_info")
-                  ]
+                  ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         current_time = datetime.now(pytz.timezone(TIMEZONE))
         curr_time = current_time.hour        
