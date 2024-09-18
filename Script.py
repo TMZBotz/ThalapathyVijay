@@ -252,9 +252,10 @@ Tʜᴀɴᴋ Yᴏᴜ Fᴏʀ Hᴇʟᴘɪɴɢ Iɴ Tʜɪꜱ Aᴍᴀᴢɪɴɢ Rᴏʟ�
     
     CAPTION = """<b>📂 {file_name}<b>
     
-    » Nᴇᴡ Uᴘᴅᴀᴛᴇs : @TamilCinemasHub
-    
-    » Mᴏᴠɪᴇ Rᴇϙᴜᴇsᴛ 24×7 : @TamilCinemaRequest <b>""" 
+  ╔════ Jᴏɪɴ Wɪᴛʜ Us ════╗
+     ▫️<a href=https://t.me/Kutty_LinkZz> Mᴀιɴ Cнᴀɴɴᴇʟ </a>
+     ▫️<a href=https://t.me/KuttyLinkZzRequest> RᴇQuᴇsт Gʀouᴘ </a>
+  ╚════ Jᴏɪɴ Wɪᴛʜ Us ════╝ <b>""" 
 
     IMDB_TEMPLATE_TXT = """
 <b>Query: {qurey}
