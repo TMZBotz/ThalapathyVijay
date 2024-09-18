@@ -8,7 +8,7 @@ Hᴇʀᴇ Is Tʜᴇ Hᴇʟᴘ Fᴏʀ Mʏ Cᴏᴍᴍᴀɴᴅs.</b>"""
 
     ABOUT_TXT = """<b><blockquote>⍟───[ MY Dᴇᴛᴀɪʟꜱ ]───⍟</blockquote>
     
-‣ Mʏ Nᴀᴍᴇ : <a href=https://t.me/ItachiUchiha_Filter_Bot>Iᴛᴀᴄʜɪ Uᴄʜɪʜᴀ Bᴏᴛ</a>
+‣ Mʏ Nᴀᴍᴇ : <a href=https://t.me/ThalapathyFilter_Bot>Iᴛᴀᴄʜɪ Uᴄʜɪʜᴀ Bᴏᴛ</a>
 ‣ Mʏ Bᴇsᴛ Fʀɪᴇɴᴅ : <a href='tg://settings'>Tʜɪs Pᴇʀsᴏɴ</a> 
 ‣ Dᴇᴠᴇʟᴏᴘᴇʀ : <a href='https://t.me/TMZ_ADMIN_BOT'>Ƙυƚƚყ</a> 
 ‣ Lɪʙʀᴀʀʏ : <a href='https://docs.pyrogram.org/'>Pʏʀᴏɢʀᴀᴍ</a> 
@@ -40,14 +40,14 @@ Iᴅ = <code>{}</code>
 Tᴏᴛᴀʟ Mᴇᴍʙᴇʀs = <code>{}</code>
 Aᴅᴅᴇᴅ Bʏ - {}
 
-Bʏ @ItachiUchiha_Filter_Bot"""
+Bʏ @ThalapathyFilter_Bot"""
 
     LOG_TEXT_P = """#NewUser
     
 Iᴅ - <code>{}</code>
 Nᴀᴍᴇ - {}
 
-Bʏ @ItachiUchiha_Filter_Bot"""
+Bʏ @ThalapathyFilter_Bot"""
 
     ALRT_TXT = """Hᴇʟʟᴏ {},
 Tʜɪꜱ Iꜱ Nᴏᴛ Yᴏᴜʀ Mᴏᴠɪᴇ Rᴇǫᴜᴇꜱᴛ,
@@ -250,12 +250,12 @@ Tʜᴀɴᴋ Yᴏᴜ Fᴏʀ Hᴇʟᴘɪɴɢ Iɴ Tʜɪꜱ Aᴍᴀᴢɪɴɢ Rᴏʟ�
 """ 
    # PLEASE DO NOT REMOVE ANY CREDITS ❤️‍🩹
     
-    CAPTION = """<b>📂 {file_name}<b>
-    
-  ╔════ Jᴏɪɴ Wɪᴛʜ Us ════╗
-     ▫️<a href=https://t.me/Kutty_LinkZz> Mᴀιɴ Cнᴀɴɴᴇʟ </a>
-     ▫️<a href=https://t.me/KuttyLinkZzRequest> RᴇQuᴇsт Gʀouᴘ </a>
-  ╚════ Jᴏɪɴ Wɪᴛʜ Us ════╝ <b>""" 
+    CAPTION = """<b>📂Fɪʟᴇɴᴀᴍᴇ : {file_name}
+   ╔════ Jᴏɪɴ Wɪᴛʜ Us ════╗
+       ▫️<a href=https://t.me/Kutty_LinkZz> Daily Updates </a>
+       ▫️<a href=https://t.me/KuttyLinkZzRequest> Rᴇǫᴜᴇsᴛ Mᴏᴠɪᴇs </a>
+   ╚════ Jᴏɪɴ Wɪᴛʜ Us ════╝
+<b> Size ⚙️: {file_size}</b>""" 
 
     IMDB_TEMPLATE_TXT = """
 <b>Query: {qurey}
@@ -286,7 +286,7 @@ Requested by : {message.from_user.mention}</b>
 🌐 Tɪᴍᴇᴢᴏɴᴇ : <code>Asia/Kolkata</code>
 🛠️ Bᴜɪʟᴅ Sᴛᴀᴛᴜs: <code>v4.2 [ Sᴛᴀʙʟᴇ ]</code>
 
-Bʏ @ItachiUchiha_Filter_Bot</b>"""
+Bʏ @ThalapathyFilter_Bot</b>"""
 
     LOGO = """
 
