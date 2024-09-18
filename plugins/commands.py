@@ -22,8 +22,6 @@ logger = logging.getLogger(__name__)
 TIMEZONE = "Asia/Kolkata"
 BATCH_FILES = {}
 
-EMOJIS = [ "👀", "😱", "🔥", "😍", "🎉", "🥰", "😇", "⚡" ]
-
 @Client.on_message(filters.command("start") & filters.incoming)
 async def start(client, message):
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
@@ -52,9 +50,6 @@ async def start(client, message):
                 ],[
                     InlineKeyboardButton('〄 Cᴏᴍᴍᴀɴᴅꜱ ', callback_data='help'),
                     InlineKeyboardButton('✇ Aʙᴏᴜᴛ ', callback_data='about')
-                ],[
-                    InlineKeyboardButton('🔍 Most Search', callback_data="mostsearch"),
-                    InlineKeyboardButton('⚡ Top Trending', callback_data="trending")
                 ],[
                     InlineKeyboardButton('✨ Bᴜʏ Sᴜʙꜱᴄʀɪᴘᴛɪᴏɴ : Rᴇᴍᴏᴠᴇ Aᴅꜱ ✨', callback_data="premium_info")
                   ]]
