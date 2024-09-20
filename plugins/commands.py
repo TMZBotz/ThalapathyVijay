@@ -64,16 +64,16 @@ async def start(client, message):
             gtxt = "Gᴏᴏᴅ Eᴠᴇɴɪɴɢ 👋"
         else:
             gtxt = "Gᴏᴏᴅ Nɪɢʜᴛ 👋"
-        m=await message.reply_text("<i>Wᴇʟᴄᴏᴍᴇ Tᴏ <b>Tнᴀʟᴀᴘᴀтнʏ Fɪʟᴛᴇʀ Boт </b>.\nHᴏᴘᴇ Yᴏᴜ'ʀᴇ Dᴏɪɴɢ Wᴇʟʟ...</i>")
+        m=await message.reply_text("<i>Wᴇʟᴄᴏᴍᴇ Tᴏ <b>Iтᴀcнι Ucнιcнᴀ Boт </b>.\nHᴏᴘᴇ Yᴏᴜ'ʀᴇ Dᴏɪɴɢ Wᴇʟʟ...</i>")
         await asyncio.sleep(0.4)
         await m.edit_text("👀")
         await asyncio.sleep(0.5)
-        await m.edit_text("⚡")
+        await m.edit_text("🔥")
         await asyncio.sleep(0.5)
         await m.edit_text("<b><i>Sᴛᴀʀᴛɪɴɢ...</i></b>")
         await asyncio.sleep(0.4)
         await m.delete()        
-        m=await message.reply_sticker("CAACAgUAAxkBAAEM09lm6k1ZbMXdNdGTO9Q4FmvsRe84AANCAwACAZOZV5-7qrbcKzb3NgQ") 
+        m=await message.reply_sticker("CAACAgUAAxkBAAEM1oJm7a0pZeF5IEq_OlmstH0ez9vQZAACQgEAAnbHEFVIE9VQbN-1xjYE") 
         await asyncio.sleep(1)
         await m.delete()
         await message.reply_photo(
@@ -134,16 +134,16 @@ async def start(client, message):
             gtxt = "Gᴏᴏᴅ Eᴠᴇɴɪɴɢ 👋"
         else:
             gtxt = "Gᴏᴏᴅ Nɪɢʜᴛ 👋"
-        m=await message.reply_text("<i>Wᴇʟᴄᴏᴍᴇ Tᴏ <b>Tнᴀʟᴀᴘᴀтнʏ Fɪʟᴛᴇʀ Boт </b>.\nHᴏᴘᴇ Yᴏᴜ'ʀᴇ Dᴏɪɴɢ Wᴇʟʟ...</i>")
+        m=await message.reply_text("<i>Wᴇʟᴄᴏᴍᴇ Tᴏ <b>Iтᴀcнι Ucнιcнᴀ Boт </b>.\nHᴏᴘᴇ Yᴏᴜ'ʀᴇ Dᴏɪɴɢ Wᴇʟʟ...</i>")
         await asyncio.sleep(0.4)
         await m.edit_text("👀")
         await asyncio.sleep(0.5)
-        await m.edit_text("⚡")
+        await m.edit_text("🔥")
         await asyncio.sleep(0.5)
         await m.edit_text("<b><i>Sᴛᴀʀᴛɪɴɢ...</i></b>")
         await asyncio.sleep(0.4)
         await m.delete()        
-        m=await message.reply_sticker("CAACAgUAAxkBAAEM09lm6k1ZbMXdNdGTO9Q4FmvsRe84AANCAwACAZOZV5-7qrbcKzb3NgQ") 
+        m=await message.reply_sticker("CAACAgUAAxkBAAEM1oJm7a0pZeF5IEq_OlmstH0ez9vQZAACQgEAAnbHEFVIE9VQbN-1xjYE") 
         await asyncio.sleep(1)
         await m.delete()
         await message.reply_photo(
@@ -213,7 +213,7 @@ async def start(client, message):
                                 InlineKeyboardButton('🚀 Fᴀꜱᴛ Dᴏᴡɴʟᴏᴀᴅ / Wᴀᴛᴄʜ Oɴʟɪɴᴇ 📺', callback_data=f'generate_stream_link:{file_id}'),
                             ],
                             [
-                                InlineKeyboardButton('☆ Jᴏɪɴ Uᴘᴅᴀᴛᴇꜱ Cʜᴀɴɴᴇʟ ☆', url=f'https://t.me/TamilCinemasHub') 
+                                InlineKeyboardButton('☆ Jᴏɪɴ Uᴘᴅᴀᴛᴇꜱ Cʜᴀɴɴᴇʟ ☆', url=f'https://t.me/Kutty_LinkZz') 
                             ]
                         ]
                     )
@@ -232,7 +232,7 @@ async def start(client, message):
                                 InlineKeyboardButton('🚀 Fᴀꜱᴛ Dᴏᴡɴʟᴏᴀᴅ / Wᴀᴛᴄʜ Oɴʟɪɴᴇ 📺', callback_data=f'generate_stream_link:{file_id}'),
                             ],
                             [
-                                InlineKeyboardButton('☆ Jᴏɪɴ Uᴘᴅᴀᴛᴇꜱ Cʜᴀɴɴᴇʟ ☆', url=f'https://t.me/TamilCinemasHub') 
+                                InlineKeyboardButton('☆ Jᴏɪɴ Uᴘᴅᴀᴛᴇꜱ Cʜᴀɴɴᴇʟ ☆', url=f'https://t.me/Kutty_LinkZz') 
                             ]
                         ]
                     )
@@ -421,7 +421,7 @@ async def start(client, message):
               InlineKeyboardButton('🚀 Fᴀꜱᴛ Dᴏᴡɴʟᴏᴀᴅ / Wᴀᴛᴄʜ Oɴʟɪɴᴇ 📺', callback_data=f'generate_stream_link:{file_id}'),
              ],
              [
-              InlineKeyboardButton('☆ Jᴏɪɴ Uᴘᴅᴀᴛᴇꜱ Cʜᴀɴɴᴇʟ ☆', url=f'https://t.me/TamilCinemasHub') 
+              InlineKeyboardButton('☆ Jᴏɪɴ Uᴘᴅᴀᴛᴇꜱ Cʜᴀɴɴᴇʟ ☆', url=f'https://t.me/Kutty_LinkZz') 
              ]
             ]
         )
@@ -497,14 +497,13 @@ async def start(client, message):
               InlineKeyboardButton('🚀 Fᴀꜱᴛ Dᴏᴡɴʟᴏᴀᴅ / ᴡᴀᴛᴄʜ ᴏɴʟɪɴᴇ 🧿', callback_data=f'generate_stream_link:{file_id}'),
              ],
              [
-              InlineKeyboardButton('📌 Jᴏɪɴ Uᴘᴅᴀᴛᴇꜱ Cʜᴀɴɴᴇʟ 📌', url=f'https://t.me/TamilCinemasHub')
-             ]
+              InlineKeyboardButton('📌 Jᴏɪɴ Uᴘᴅᴀᴛᴇꜱ Cʜᴀɴɴᴇʟ 📌', url=f'https://t.me/Kutty_LinkZz')
             ]
         )
     )
             filetype = msg.media
             file = getattr(msg, filetype.value)
-            title = '' + ' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@'), file.file_name.split()))
+            title = '@Kutty_LinkZz' + ' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@'), file.file_name.split()))
             size=get_size(file.file_size)
             f_caption = f"<code>{title}</code>"
             if CUSTOM_FILE_CAPTION:
@@ -525,7 +524,7 @@ async def start(client, message):
             pass
         return await message.reply('Nᴏ Sᴜᴄʜ Fɪʟᴇ Exɪꜱᴛꜱ !')
     files = files_[0]
-    title = '' + ' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@'), files.file_name.split()))
+    title = '@Kutty_LinkZz' + ' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@'), files.file_name.split()))
     size=get_size(files.file_size)
     f_caption=files.caption
     if CUSTOM_FILE_CAPTION:
@@ -560,7 +559,7 @@ async def start(client, message):
               InlineKeyboardButton('🚀 Fᴀꜱᴛ Dᴏᴡɴʟᴏᴀᴅ / Wᴀᴛᴄʜ Oɴʟɪɴᴇ 🧿', callback_data=f'generate_stream_link:{file_id}'),
              ],
              [
-              InlineKeyboardButton('📌 Jᴏɪɴ Uᴘᴅᴀᴛᴇꜱ Cʜᴀɴɴᴇʟ 📌', url=f'https://t.me/TamilCinemasHub') 
+              InlineKeyboardButton('📌 Jᴏɪɴ Uᴘᴅᴀᴛᴇꜱ Cʜᴀɴɴᴇʟ 📌', url=f'https://t.me/Kutty_LinkZz') 
              ]
             ]
         )
