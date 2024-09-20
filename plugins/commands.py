@@ -26,9 +26,9 @@ BATCH_FILES = {}
 async def start(client, message):
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         buttons = [[
-                    InlineKeyboardButton('☆ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ☆', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+                    InlineKeyboardButton('☆ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ☆', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                 ],[
-                    InlineKeyboardButton('🍁 Hᴏᴡ Tᴏ Uꜱᴇ 🍁', url="https://t.me/{temp.U_NAME}?start=help")
+                    InlineKeyboardButton('🍁 ʜᴏᴡ ᴛᴏ ᴜꜱᴇ 🍁', url="https://t.me/{temp.U_NAME}?start=help")
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply(script.GSTART_TXT.format(message.from_user.mention if message.from_user else message.chat.title, temp.U_NAME, temp.B_NAME), reply_markup=reply_markup, disable_web_page_preview=True)
@@ -43,37 +43,37 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-                    InlineKeyboardButton('☆ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ☆', url=f'http://telegram.me/{temp.U_NAME}?startgroup=true')
+                    InlineKeyboardButton('☆ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ☆', url=f'http://telegram.me/{temp.U_NAME}?startgroup=true')
                 ],[
-                    InlineKeyboardButton('💸 Eᴀʀɴ Mᴏɴᴇʏ 💸', callback_data="shortlink_info"),
-                    InlineKeyboardButton('⍟ Uᴘᴅᴀᴛᴇꜱ ', callback_data='channels')
+                    InlineKeyboardButton('💸 ᴇᴀʀɴ ᴍᴏɴᴇʏ 💸', callback_data="shortlink_info"),
+                    InlineKeyboardButton('• ᴜᴘᴅᴀᴛᴇꜱ •', callback_data='channels')
                 ],[
-                    InlineKeyboardButton('〄 Cᴏᴍᴍᴀɴᴅꜱ ', callback_data='help'),
-                    InlineKeyboardButton('✇ Aʙᴏᴜᴛ ', callback_data='about')
+                    InlineKeyboardButton('• ᴄᴏᴍᴍᴀɴᴅꜱ •', callback_data='help'),
+                    InlineKeyboardButton('• ᴀʙᴏᴜᴛ •', callback_data='about')
                 ],[
-                    InlineKeyboardButton('✨ Bᴜʏ Sᴜʙꜱᴄʀɪᴘᴛɪᴏɴ : Rᴇᴍᴏᴠᴇ Aᴅꜱ ✨', callback_data="premium_info")
+                    InlineKeyboardButton('✨ ʙᴜʏ ꜱᴜʙꜱᴄʀɪᴘᴛɪᴏɴ : ʀᴇᴍᴏᴠᴇ ᴀᴅꜱ ✨', callback_data="premium_info")
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         current_time = datetime.now(pytz.timezone(TIMEZONE))
         curr_time = current_time.hour        
         if curr_time < 12:
-            gtxt = "Gᴏᴏᴅ Mᴏʀɴɪɴɢ 👋" 
+            gtxt = "ɢᴏᴏᴅ ᴍᴏʀɴɪɴɢ 👋" 
         elif curr_time < 17:
-            gtxt = "Gᴏᴏᴅ Aғᴛᴇʀɴᴏᴏɴ 👋" 
+            gtxt = "ɢᴏᴏᴅ ᴀғᴛᴇʀɴᴏᴏɴ 👋" 
         elif curr_time < 21:
-            gtxt = "Gᴏᴏᴅ Eᴠᴇɴɪɴɢ 👋"
+            gtxt = "ɢᴏᴏᴅ ᴇᴠᴇɴɪɴɢ 👋"
         else:
-            gtxt = "Gᴏᴏᴅ Nɪɢʜᴛ 👋"
-        m=await message.reply_text("<i>Wᴇʟᴄᴏᴍᴇ Tᴏ <b>Iтᴀcнι Ucнιcнᴀ Boт </b>.\nHᴏᴘᴇ Yᴏᴜ'ʀᴇ Dᴏɪɴɢ Wᴇʟʟ...</i>")
+            gtxt = "ɢᴏᴏᴅ ɴɪɢʜᴛ 👋"
+        m=await message.reply_text("<i>ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ <b>ᴛʜᴇ ᴍᴏᴠɪᴇ ᴘʀᴏᴠɪᴅᴇʀ ʙᴏᴛ</b>.\nʜᴏᴘᴇ ʏᴏᴜ'ʀᴇ ᴅᴏɪɴɢ ᴡᴇʟʟ...</i>")
         await asyncio.sleep(0.4)
         await m.edit_text("👀")
         await asyncio.sleep(0.5)
-        await m.edit_text("🔥")
+        await m.edit_text("⚡")
         await asyncio.sleep(0.5)
-        await m.edit_text("<b><i>Sᴛᴀʀᴛɪɴɢ...</i></b>")
+        await m.edit_text("<b><i>ꜱᴛᴀʀᴛɪɴɢ...</i></b>")
         await asyncio.sleep(0.4)
         await m.delete()        
-        m=await message.reply_sticker("CAACAgUAAxkBAAEM1oJm7a0pZeF5IEq_OlmstH0ez9vQZAACQgEAAnbHEFVIE9VQbN-1xjYE") 
+        m=await message.reply_sticker("CAACAgQAAxkBAAEKeqNlIpmeUoOEsEWOWEiPxPi3hH5q-QACbg8AAuHqsVDaMQeY6CcRojAE") 
         await asyncio.sleep(1)
         await m.delete()
         await message.reply_photo(
@@ -93,7 +93,7 @@ async def start(client, message):
         btn = [
             [
                 InlineKeyboardButton(
-                    "☆ Jᴏɪɴ Uᴘᴅᴀᴛᴇꜱ Cʜᴀɴɴᴇʟ ☆", url=invite_link.invite_link
+                    "📌 ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ 📌", url=invite_link.invite_link
                 )
             ]
         ]
@@ -106,44 +106,44 @@ async def start(client, message):
                 btn.append([InlineKeyboardButton("↻ Tʀʏ Aɢᴀɪɴ", url=f"https://t.me/{temp.U_NAME}?start={message.command[1]}")])
         await client.send_message(
             chat_id=message.from_user.id,
-            text="Jᴏɪɴ Oᴜʀ Uᴘᴅᴀᴛᴇꜱ Cʜᴀɴɴᴇʟ Aɴᴅ Tʜᴇɴ Cʟɪᴄᴋ Oɴ Tʀʏ Aɢᴀɪɴ Tᴏ Gᴇᴛ Yᴏᴜʀ Rᴇǫᴜᴇꜱᴛᴇᴅ Fɪʟᴇ.",
+            text="ᴊᴏɪɴ ᴏᴜʀ ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ ᴀɴᴅ ᴛʜᴇɴ ᴄʟɪᴄᴋ ᴏɴ ᴛʀʏ ᴀɢᴀɪɴ ᴛᴏ ɢᴇᴛ ʏᴏᴜʀ ʀᴇǫᴜᴇꜱᴛᴇᴅ ꜰɪʟᴇ.",
             reply_markup=InlineKeyboardMarkup(btn),
             parse_mode=enums.ParseMode.MARKDOWN
             )
         return
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
-                    InlineKeyboardButton('☆ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ☆', url=f'http://telegram.me/{temp.U_NAME}?startgroup=true')
+                    InlineKeyboardButton('☆ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ☆', url=f'http://telegram.me/{temp.U_NAME}?startgroup=true')
                 ],[
-                    InlineKeyboardButton('💸 Eᴀʀɴ Mᴏɴᴇʏ 💸', callback_data="shortlink_info"),
-                    InlineKeyboardButton('⍟ Uᴘᴅᴀᴛᴇꜱ ', callback_data='channels')
+                    InlineKeyboardButton('💸 ᴇᴀʀɴ ᴍᴏɴᴇʏ 💸', callback_data="shortlink_info"),
+                    InlineKeyboardButton('• ᴜᴘᴅᴀᴛᴇꜱ •', callback_data='channels')
                 ],[
-                    InlineKeyboardButton('〄 Cᴏᴍᴍᴀɴᴅꜱ ', callback_data='help'),
-                    InlineKeyboardButton('✇ Aʙᴏᴜᴛ ', callback_data='about')
+                    InlineKeyboardButton('• ᴄᴏᴍᴍᴀɴᴅꜱ •', callback_data='help'),
+                    InlineKeyboardButton('• ᴀʙᴏᴜᴛ •', callback_data='about')
                 ],[
-                    InlineKeyboardButton('✨ Bᴜʏ Sᴜʙꜱᴄʀɪᴘᴛɪᴏɴ : Rᴇᴍᴏᴠᴇ Aᴅꜱ ✨', callback_data="premium_info")
+                    InlineKeyboardButton('✨ ʙᴜʏ ꜱᴜʙꜱᴄʀɪᴘᴛɪᴏɴ : ʀᴇᴍᴏᴠᴇ ᴀᴅꜱ ✨', callback_data="premium_info")
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         current_time = datetime.now(pytz.timezone(TIMEZONE))
         curr_time = current_time.hour        
         if curr_time < 12:
-            gtxt = "Gᴏᴏᴅ Mᴏʀɴɪɴɢ 👋" 
+            gtxt = "ɢᴏᴏᴅ ᴍᴏʀɴɪɴɢ 👋" 
         elif curr_time < 17:
-            gtxt = "Gᴏᴏᴅ Aғᴛᴇʀɴᴏᴏɴ 👋" 
+            gtxt = "ɢᴏᴏᴅ ᴀғᴛᴇʀɴᴏᴏɴ 👋" 
         elif curr_time < 21:
-            gtxt = "Gᴏᴏᴅ Eᴠᴇɴɪɴɢ 👋"
+            gtxt = "ɢᴏᴏᴅ ᴇᴠᴇɴɪɴɢ 👋"
         else:
-            gtxt = "Gᴏᴏᴅ Nɪɢʜᴛ 👋"
-        m=await message.reply_text("<i>Wᴇʟᴄᴏᴍᴇ Tᴏ <b>Iтᴀcнι Ucнιcнᴀ Boт </b>.\nHᴏᴘᴇ Yᴏᴜ'ʀᴇ Dᴏɪɴɢ Wᴇʟʟ...</i>")
+            gtxt = "ɢᴏᴏᴅ ɴɪɢʜᴛ 👋"
+        m=await message.reply_text("<i>ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ <b>ᴛʜᴇ ᴍᴏᴠɪᴇ ᴘʀᴏᴠɪᴅᴇʀ ʙᴏᴛ</b>.\nʜᴏᴘᴇ ʏᴏᴜ'ʀᴇ ᴅᴏɪɴɢ ᴡᴇʟʟ...</i>")
         await asyncio.sleep(0.4)
         await m.edit_text("👀")
         await asyncio.sleep(0.5)
-        await m.edit_text("🔥")
+        await m.edit_text("⚡")
         await asyncio.sleep(0.5)
-        await m.edit_text("<b><i>Sᴛᴀʀᴛɪɴɢ...</i></b>")
+        await m.edit_text("<b><i>ꜱᴛᴀʀᴛɪɴɢ...</i></b>")
         await asyncio.sleep(0.4)
         await m.delete()        
-        m=await message.reply_sticker("CAACAgUAAxkBAAEM1oJm7a0pZeF5IEq_OlmstH0ez9vQZAACQgEAAnbHEFVIE9VQbN-1xjYE") 
+        m=await message.reply_sticker("CAACAgQAAxkBAAEKeqNlIpmeUoOEsEWOWEiPxPi3hH5q-QACbg8AAuHqsVDaMQeY6CcRojAE") 
         await asyncio.sleep(1)
         await m.delete()
         await message.reply_photo(
@@ -157,9 +157,9 @@ async def start(client, message):
         
     if len(message.command) == 2 and message.command[1] in ["premium"]:
         buttons = [[
-                    InlineKeyboardButton('📲 Sᴇɴᴅ Pᴀʏᴍᴇɴᴛ Sᴄʀᴇᴇɴꜱʜᴏᴛ', user_id=int(1572929036))
+                    InlineKeyboardButton('📲 ꜱᴇɴᴅ ᴘᴀʏᴍᴇɴᴛ ꜱᴄʀᴇᴇɴꜱʜᴏᴛ', user_id=int(767250672))
                   ],[
-                    InlineKeyboardButton('❌ Cʟᴏꜱᴇ ❌', callback_data='close_data')
+                    InlineKeyboardButton('❌ ᴄʟᴏꜱᴇ ❌', callback_data='close_data')
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -210,10 +210,10 @@ async def start(client, message):
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [
-                                InlineKeyboardButton('🚀 Fᴀꜱᴛ Dᴏᴡɴʟᴏᴀᴅ / Wᴀᴛᴄʜ Oɴʟɪɴᴇ 📺', callback_data=f'generate_stream_link:{file_id}'),
+                                InlineKeyboardButton('🚀 ꜰᴀꜱᴛ ᴅᴏᴡɴʟᴏᴀᴅ / ᴡᴀᴛᴄʜ ᴏɴʟɪɴᴇ 🧿', callback_data=f'generate_stream_link:{file_id}'),
                             ],
                             [
-                                InlineKeyboardButton('☆ Jᴏɪɴ Uᴘᴅᴀᴛᴇꜱ Cʜᴀɴɴᴇʟ ☆', url=f'https://t.me/Kutty_LinkZz') 
+                                InlineKeyboardButton('📌 ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ 📌', url=f'https://t.me/HP_MOVIES_WORLD') #Don't change anything without contacting me @LazyDeveloperr
                             ]
                         ]
                     )
@@ -229,10 +229,10 @@ async def start(client, message):
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [
-                                InlineKeyboardButton('🚀 Fᴀꜱᴛ Dᴏᴡɴʟᴏᴀᴅ / Wᴀᴛᴄʜ Oɴʟɪɴᴇ 📺', callback_data=f'generate_stream_link:{file_id}'),
+                                InlineKeyboardButton('🚀 ꜰᴀꜱᴛ ᴅᴏᴡɴʟᴏᴀᴅ / ᴡᴀᴛᴄʜ ᴏɴʟɪɴᴇ 🧿', callback_data=f'generate_stream_link:{file_id}'),
                             ],
                             [
-                                InlineKeyboardButton('☆ Jᴏɪɴ Uᴘᴅᴀᴛᴇꜱ Cʜᴀɴɴᴇʟ ☆', url=f'https://t.me/Kutty_LinkZz') 
+                                InlineKeyboardButton('📌 ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ 📌', url=f'https://t.me/HP_MOVIES_WORLD') #Don't change anything without contacting me @LazyDeveloperr
                             ]
                         ]
                     )
@@ -300,7 +300,7 @@ async def start(client, message):
         is_valid = await check_token(client, userid, token)
         if is_valid == True:
             await message.reply_text(
-                text=f"<b>Hey {message.from_user.mention}, You are Successfully Verified !\nNow You Have Unlimited Access For All Movies Till Today Midnight.</b>",
+                text=f"<b>Hey {message.from_user.mention}, You are successfully verified !\nNow you have unlimited access for all movies till today midnight.</b>",
                 protect_content=True
             )
             await verify_user(client, userid, token)
@@ -314,30 +314,30 @@ async def start(client, message):
         current_time = datetime.now(pytz.timezone(TIMEZONE))
         curr_time = current_time.hour        
         if curr_time < 12:
-            gtxt = "Gᴏᴏᴅ Mᴏʀɴɪɴɢ 👋" 
+            gtxt = "ɢᴏᴏᴅ ᴍᴏʀɴɪɴɢ 👋" 
         elif curr_time < 17:
-            gtxt = "Gᴏᴏᴅ Aғᴛᴇʀɴᴏᴏɴ 👋" 
+            gtxt = "ɢᴏᴏᴅ ᴀғᴛᴇʀɴᴏᴏɴ 👋" 
         elif curr_time < 21:
-            gtxt = "Gᴏᴏᴅ Eᴠᴇɴɪɴɢ 👋"
+            gtxt = "ɢᴏᴏᴅ ᴇᴠᴇɴɪɴɢ 👋"
         else:
-            gtxt = "Gᴏᴏᴅ Nɪɢʜᴛ 👋"
+            gtxt = "ɢᴏᴏᴅ ɴɪɢʜᴛ 👋"
         chat_id = int("-" + file_id.split("-")[1])
         userid = message.from_user.id if message.from_user else None
         g = await get_shortlink(chat_id, f"https://telegram.me/{temp.U_NAME}?start=allfiles_{file_id}")
-        k = await client.send_message(chat_id=message.from_user.id,text=f"🫂 ʜᴇʏ {message.from_user.mention}, {gtxt}\n\n‼️ Gᴇᴛ Aʟʟ Fɪʟᴇꜱ Iɴ ᴀ Sɪɴɢʟᴇ Lɪɴᴋ ‼️\n\n✅ Yᴏᴜʀ Lɪɴᴋ Iꜱ Rᴇᴀᴅʏ, Kɪɴᴅʟʏ Cʟɪᴄᴋ Oɴ Dᴏᴡɴʟᴏᴀᴅ Bᴜᴛᴛᴏɴ.\n\n", reply_markup=InlineKeyboardMarkup(
+        k = await client.send_message(chat_id=message.from_user.id,text=f"🫂 ʜᴇʏ {message.from_user.mention}, {gtxt}\n\n‼️ ɢᴇᴛ ᴀʟʟ ꜰɪʟᴇꜱ ɪɴ ᴀ ꜱɪɴɢʟᴇ ʟɪɴᴋ ‼️\n\n✅ ʏᴏᴜʀ ʟɪɴᴋ ɪꜱ ʀᴇᴀᴅʏ, ᴋɪɴᴅʟʏ ᴄʟɪᴄᴋ ᴏɴ ᴅᴏᴡɴʟᴏᴀᴅ ʙᴜᴛᴛᴏɴ.\n\n", reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton('📁 Dᴏᴡɴʟᴏᴀᴅ 📁', url=g)
+                        InlineKeyboardButton('📁 ᴅᴏᴡɴʟᴏᴀᴅ 📁', url=g)
                     ], [
-                        InlineKeyboardButton('🔅 Hᴏᴡ Tᴏ Dᴏᴡɴʟᴏᴀᴅ 🔅', url=await get_tutorial(chat_id))
+                        InlineKeyboardButton('⚡ ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ ⚡', url=await get_tutorial(chat_id))
                     ], [
-                        InlineKeyboardButton('✨ Bᴜʏ Sᴜʙꜱᴄʀɪᴘᴛɪᴏɴ : Rᴇᴍᴏᴠᴇ Aᴅꜱ ✨', callback_data="seeplans")                        
+                        InlineKeyboardButton('✨ ʙᴜʏ ꜱᴜʙꜱᴄʀɪᴘᴛɪᴏɴ : ʀᴇᴍᴏᴠᴇ ᴀᴅꜱ ✨', callback_data="seeplans")                        
                     ]
                 ]
             )
         )
         await asyncio.sleep(300)
-        await k.edit("<b>Yᴏᴜʀ Mᴇꜱꜱᴀɢᴇ Iꜱ Dᴇʟᴇᴛᴇᴅ !\nKɪɴᴅʟʏ Sᴇᴀʀᴄʜ Aɢᴀɪɴ.</b>")
+        await k.edit("<b>ʏᴏᴜʀ ᴍᴇꜱꜱᴀɢᴇ ɪꜱ ᴅᴇʟᴇᴛᴇᴅ !\nᴋɪɴᴅʟʏ ꜱᴇᴀʀᴄʜ ᴀɢᴀɪɴ.</b>")
         return
         
     
@@ -346,13 +346,13 @@ async def start(client, message):
         current_time = datetime.now(pytz.timezone(TIMEZONE))
         curr_time = current_time.hour        
         if curr_time < 12:
-            gtxt = "Gᴏᴏᴅ Mᴏʀɴɪɴɢ 👋" 
+            gtxt = "ɢᴏᴏᴅ ᴍᴏʀɴɪɴɢ 👋" 
         elif curr_time < 17:
-            gtxt = "Gᴏᴏᴅ Aғᴛᴇʀɴᴏᴏɴ 👋" 
+            gtxt = "ɢᴏᴏᴅ ᴀғᴛᴇʀɴᴏᴏɴ 👋" 
         elif curr_time < 21:
-            gtxt = "Gᴏᴏᴅ Eᴠᴇɴɪɴɢ 👋"
+            gtxt = "ɢᴏᴏᴅ ᴇᴠᴇɴɪɴɢ 👋"
         else:
-            gtxt = "Gᴏᴏᴅ Nɪɢʜᴛ 👋"        
+            gtxt = "ɢᴏᴏᴅ ɴɪɢʜᴛ 👋"        
         user_id = message.from_user.id
         chat_id = temp.SHORT.get(user_id)
         files_ = await get_file_details(file_id)
@@ -360,19 +360,19 @@ async def start(client, message):
         g = await get_shortlink(chat_id, f"https://telegram.me/{temp.U_NAME}?start=file_{file_id}")
         k = await client.send_message(
             chat_id=user_id,
-            text=f"🫂 ʜᴇʏ {message.from_user.mention}, {gtxt}\n\n✅ Yᴏᴜʀ Lɪɴᴋ Iꜱ Rᴇᴀᴅʏ, Kɪɴᴅʟʏ Cʟɪᴄᴋ Oɴ Dᴏᴡɴʟᴏᴀᴅ Bᴜᴛᴛᴏɴ.\n\n⚠️ Fɪʟᴇ Nᴀᴍᴇ : <code>{files.file_name}</code> \n\n📥 Fɪʟᴇ Sɪᴢᴇ : <code>{get_size(files.file_size)}</code>\n\n",
+            text=f"🫂 ʜᴇʏ {message.from_user.mention}, {gtxt}\n\n✅ ʏᴏᴜʀ ʟɪɴᴋ ɪꜱ ʀᴇᴀᴅʏ, ᴋɪɴᴅʟʏ ᴄʟɪᴄᴋ ᴏɴ ᴅᴏᴡɴʟᴏᴀᴅ ʙᴜᴛᴛᴏɴ.\n\n⚠️ ꜰɪʟᴇ ɴᴀᴍᴇ : <code>{files.file_name}</code> \n\n📥 ꜰɪʟᴇ ꜱɪᴢᴇ : <code>{get_size(files.file_size)}</code>\n\n",
             reply_markup=InlineKeyboardMarkup(
                 [[
-                    InlineKeyboardButton('📁 Dᴏᴡɴʟᴏᴀᴅ 📁', url=g)
+                    InlineKeyboardButton('📁 ᴅᴏᴡɴʟᴏᴀᴅ 📁', url=g)
                 ], [
-                    InlineKeyboardButton('🔅 Hᴏᴡ Tᴏ Dᴏᴡɴʟᴏᴀᴅ 🔅', url=await get_tutorial(chat_id))
+                    InlineKeyboardButton('⚡ ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ ⚡', url=await get_tutorial(chat_id))
                 ], [
-                    InlineKeyboardButton('✨ Bᴜʏ Sᴜʙꜱᴄʀɪᴘᴛɪᴏɴ : Rᴇᴍᴏᴠᴇ Aᴅꜱ ✨', callback_data="seeplans")
+                    InlineKeyboardButton('✨ ʙᴜʏ ꜱᴜʙꜱᴄʀɪᴘᴛɪᴏɴ : ʀᴇᴍᴏᴠᴇ ᴀᴅꜱ ✨', callback_data="seeplans")
                 ]]
             )
         )
         await asyncio.sleep(600)
-        await k.edit("<b>Yᴏᴜʀ Mᴇꜱꜱᴀɢᴇ Iꜱ Dᴇʟᴇᴛᴇᴅ !\nKɪɴᴅʟʏ Sᴇᴀʀᴄʜ Aɢᴀɪɴ.</b>")
+        await k.edit("<b>ʏᴏᴜʀ ᴍᴇꜱꜱᴀɢᴇ ɪꜱ ᴅᴇʟᴇᴛᴇᴅ !\nᴋɪɴᴅʟʏ ꜱᴇᴀʀᴄʜ ᴀɢᴀɪɴ.</b>")
         return
         
     elif data.startswith("all"):
@@ -380,7 +380,7 @@ async def start(client, message):
         user_id = message.from_user.id
         files = temp.GETALL.get(file_id)
         if not files:
-            return await message.reply('<b><i>Nᴏ Sᴜᴄʜ Fɪʟᴇ Exɪꜱᴛꜱ !</b></i>')
+            return await message.reply('<b><i>ɴᴏ ꜱᴜᴄʜ ꜰɪʟᴇ ᴇxɪꜱᴛꜱ !</b></i>')
         filesarr = []
         for file in files:
             file_id = file.file_id
@@ -400,12 +400,12 @@ async def start(client, message):
 
             if not await check_verification(client, message.from_user.id) and VERIFY == True:
                 btn = [[
-                    InlineKeyboardButton("♻️ Cʟɪᴄᴋ Hᴇʀᴇ Tᴏ Vᴇʀɪꜰʏ ♻️", url=await get_token(client, message.from_user.id, f"https://telegram.me/{temp.U_NAME}?start="))
+                    InlineKeyboardButton("♻️ ᴄʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ ᴠᴇʀɪꜰʏ ♻️", url=await get_token(client, message.from_user.id, f"https://telegram.me/{temp.U_NAME}?start="))
                 ],[
-                    InlineKeyboardButton("⁉️ Hᴏᴡ Tᴏ Vᴇʀɪꜰʏ ⁉️", url=HOWTOVERIFY)
+                    InlineKeyboardButton("⁉️ ʜᴏᴡ ᴛᴏ ᴠᴇʀɪꜰʏ ⁉️", url=HOWTOVERIFY)
                 ]]
                 await message.reply_text(
-                    text="<b>👋 Hᴇʏ {message.from_user.mention}, Yᴏᴜ'ʀᴇ Aʀᴇ Sᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ Vᴇʀɪꜰɪᴇᴅ ✅\n\nɴᴏᴡ Yᴏᴜ'ᴠᴇ Uɴʟɪᴍɪᴛᴇᴅ Aᴄᴄᴇꜱꜱ Tɪʟʟ Nᴇxᴛ Vᴇʀɪꜰɪᴄᴀᴛɪᴏɴ 🎉</b>",
+                    text="<b>👋 ʜᴇʏ {message.from_user.mention}, ʏᴏᴜ'ʀᴇ ᴀʀᴇ ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ ᴠᴇʀɪꜰɪᴇᴅ ✅\n\nɴᴏᴡ ʏᴏᴜ'ᴠᴇ ᴜɴʟɪᴍɪᴛᴇᴅ ᴀᴄᴄᴇꜱꜱ ᴛɪʟʟ ɴᴇxᴛ ᴠᴇʀɪꜰɪᴄᴀᴛɪᴏɴ 🎉</b>",
                     protect_content=True,
                     reply_markup=InlineKeyboardMarkup(btn)
                 )
@@ -418,10 +418,10 @@ async def start(client, message):
                 reply_markup=InlineKeyboardMarkup(
             [
              [
-              InlineKeyboardButton('🚀 Fᴀꜱᴛ Dᴏᴡɴʟᴏᴀᴅ / Wᴀᴛᴄʜ Oɴʟɪɴᴇ 📺', callback_data=f'generate_stream_link:{file_id}'),
+              InlineKeyboardButton('🚀 ꜰᴀꜱᴛ ᴅᴏᴡɴʟᴏᴀᴅ / ᴡᴀᴛᴄʜ ᴏɴʟɪɴᴇ 🧿', callback_data=f'generate_stream_link:{file_id}'),
              ],
              [
-              InlineKeyboardButton('☆ Jᴏɪɴ Uᴘᴅᴀᴛᴇꜱ Cʜᴀɴɴᴇʟ ☆', url=f'https://t.me/Kutty_LinkZz') 
+              InlineKeyboardButton('📌 ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ 📌', url=f'https://t.me/HP_MOVIES_WORLD') #Don't change anything without contacting me @LazyDeveloperr
              ]
             ]
         )
@@ -438,13 +438,13 @@ async def start(client, message):
         current_time = datetime.now(pytz.timezone(TIMEZONE))
         curr_time = current_time.hour        
         if curr_time < 12:
-            gtxt = "Gᴏᴏᴅ Mᴏʀɴɪɴɢ 👋" 
+            gtxt = "ɢᴏᴏᴅ ᴍᴏʀɴɪɴɢ 👋" 
         elif curr_time < 17:
-            gtxt = "Gᴏᴏᴅ Aғᴛᴇʀɴᴏᴏɴ 👋" 
+            gtxt = "ɢᴏᴏᴅ ᴀғᴛᴇʀɴᴏᴏɴ 👋" 
         elif curr_time < 21:
-            gtxt = "Gᴏᴏᴅ Eᴠᴇɴɪɴɢ 👋"
+            gtxt = "ɢᴏᴏᴅ ᴇᴠᴇɴɪɴɢ 👋"
         else:
-            gtxt = "Gᴏᴏᴅ Nɪɢʜᴛ 👋"        
+            gtxt = "ɢᴏᴏᴅ ɴɪɢʜᴛ 👋"        
         user_id = message.from_user.id
         if temp.SHORT.get(user_id)==None:
             return await message.reply_text(text="<b>Please Search Again in Group</b>")
@@ -458,11 +458,11 @@ async def start(client, message):
             k = await client.send_message(chat_id=message.from_user.id,text=f"🫂 ʜᴇʏ {message.from_user.mention}, {gtxt}\n\n✅ ʏᴏᴜʀ ʟɪɴᴋ ɪꜱ ʀᴇᴀᴅʏ, ᴋɪɴᴅʟʏ ᴄʟɪᴄᴋ ᴏɴ ᴅᴏᴡɴʟᴏᴀᴅ ʙᴜᴛᴛᴏɴ.\n\n⚠️ ꜰɪʟᴇ ɴᴀᴍᴇ : <code>{files.file_name}</code> \n\n📥 ꜰɪʟᴇ ꜱɪᴢᴇ : <code>{get_size(files.file_size)}</code>\n\n", reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton('📁 Dᴏᴡɴʟᴏᴀᴅ 📁', url=g)
+                            InlineKeyboardButton('📁 ᴅᴏᴡɴʟᴏᴀᴅ 📁', url=g)
                         ], [
-                            InlineKeyboardButton('🔅 Hᴏᴡ Tᴏ Dᴏᴡɴʟᴏᴀᴅ 🔅', url=await get_tutorial(chat_id))
+                            InlineKeyboardButton('⚡ ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ ⚡', url=await get_tutorial(chat_id))
                         ], [
-                            InlineKeyboardButton('✨ Bᴜʏ Sᴜʙꜱᴄʀɪᴘᴛɪᴏɴ : Rᴇᴍᴏᴠᴇ Aᴅꜱ ✨', callback_data="seeplans")                            
+                            InlineKeyboardButton('✨ ʙᴜʏ ꜱᴜʙꜱᴄʀɪᴘᴛɪᴏɴ : ʀᴇᴍᴏᴠᴇ ᴀᴅꜱ ✨', callback_data="seeplans")                            
                         ]
                     ]
                 )
@@ -494,16 +494,17 @@ async def start(client, message):
                 reply_markup=InlineKeyboardMarkup(
             [
              [
-              InlineKeyboardButton('🚀 Fᴀꜱᴛ Dᴏᴡɴʟᴏᴀᴅ / ᴡᴀᴛᴄʜ ᴏɴʟɪɴᴇ 🧿', callback_data=f'generate_stream_link:{file_id}'),
+              InlineKeyboardButton('🚀 ꜰᴀꜱᴛ ᴅᴏᴡɴʟᴏᴀᴅ / ᴡᴀᴛᴄʜ ᴏɴʟɪɴᴇ 🧿', callback_data=f'generate_stream_link:{file_id}'),
              ],
              [
-              InlineKeyboardButton('📌 Jᴏɪɴ Uᴘᴅᴀᴛᴇꜱ Cʜᴀɴɴᴇʟ 📌', url=f'https://t.me/Kutty_LinkZz')
+              InlineKeyboardButton('📌 ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ 📌', url=f'https://t.me/HP_MOVIES_WORLD') #Don't change anything without contacting me @LazyDeveloperr
+             ]
             ]
         )
     )
             filetype = msg.media
             file = getattr(msg, filetype.value)
-            title = '@Kutty_LinkZz' + ' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@'), file.file_name.split()))
+            title = '' + ' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@'), file.file_name.split()))
             size=get_size(file.file_size)
             f_caption = f"<code>{title}</code>"
             if CUSTOM_FILE_CAPTION:
@@ -518,13 +519,13 @@ async def start(client, message):
             k = await client.send_message(chat_id = message.from_user.id, text=f"<b>❗️ <u>ɪᴍᴘᴏʀᴛᴀɴᴛ</u> ❗️</b>\n\n<b>ᴛʜɪꜱ ᴠɪᴅᴇᴏ / ꜰɪʟᴇ ᴡɪʟʟ ʙᴇ ᴅᴇʟᴇᴛᴇᴅ ɪɴ</b> <b><u>10 ᴍɪɴᴜᴛᴇꜱ</u> </b><b>(ᴅᴜᴇ ᴛᴏ ᴄᴏᴘʏʀɪɢʜᴛ ɪꜱꜱᴜᴇꜱ).</b>\n\n<b><i>📌 ᴘʟᴇᴀꜱᴇ ꜰᴏʀᴡᴀʀᴅ ᴛʜɪꜱ ᴠɪᴅᴇᴏ / ꜰɪʟᴇ ᴛᴏ ꜱᴏᴍᴇᴡʜᴇʀᴇ ᴇʟꜱᴇ ᴀɴᴅ ꜱᴛᴀʀᴛ ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ ᴛʜᴇʀᴇ.</i></b>")
             await asyncio.sleep(600)
             await msg.delete()
-            await k.edit_text("<b>ʏᴏᴜʀ ᴠɪᴅᴇᴏ / Fɪʟᴇ Iꜱ Sᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ Dᴇʟᴇᴛᴇᴅ !!\n\nᴄʟɪᴄᴋ ʙᴇʟᴏᴡ ʙᴜᴛᴛᴏɴ ᴛᴏ ɢᴇᴛ ʏᴏᴜʀ ᴅᴇʟᴇᴛᴇᴅ ᴠɪᴅᴇᴏ / ꜰɪʟᴇ 👇</b>",reply_markup=InlineKeyboardMarkup(btn))
+            await k.edit_text("<b>ʏᴏᴜʀ ᴠɪᴅᴇᴏ / ꜰɪʟᴇ ɪꜱ ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ ᴅᴇʟᴇᴛᴇᴅ !!\n\nᴄʟɪᴄᴋ ʙᴇʟᴏᴡ ʙᴜᴛᴛᴏɴ ᴛᴏ ɢᴇᴛ ʏᴏᴜʀ ᴅᴇʟᴇᴛᴇᴅ ᴠɪᴅᴇᴏ / ꜰɪʟᴇ 👇</b>",reply_markup=InlineKeyboardMarkup(btn))
             return
         except:
             pass
-        return await message.reply('Nᴏ Sᴜᴄʜ Fɪʟᴇ Exɪꜱᴛꜱ !')
+        return await message.reply('ɴᴏ ꜱᴜᴄʜ ꜰɪʟᴇ ᴇxɪꜱᴛꜱ !')
     files = files_[0]
-    title = '@Kutty_LinkZz' + ' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@'), files.file_name.split()))
+    title = '' + ' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@'), files.file_name.split()))
     size=get_size(files.file_size)
     f_caption=files.caption
     if CUSTOM_FILE_CAPTION:
@@ -538,9 +539,9 @@ async def start(client, message):
 
     if not await check_verification(client, message.from_user.id) and VERIFY == True:
         btn = [[
-            InlineKeyboardButton("♻️ Cʟɪᴄᴋ Hᴇʀᴇ Tᴏ Vᴇʀɪꜰʏ ♻️", url=await get_token(client, message.from_user.id, f"https://telegram.me/{temp.U_NAME}?start="))
+            InlineKeyboardButton("♻️ ᴄʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ ᴠᴇʀɪꜰʏ ♻️", url=await get_token(client, message.from_user.id, f"https://telegram.me/{temp.U_NAME}?start="))
         ],[
-            InlineKeyboardButton("⁉️ Hᴏᴡ Tᴏ Vᴇʀɪꜰʏ ⁉️", url=HOWTOVERIFY)
+            InlineKeyboardButton("⁉️ ʜᴏᴡ ᴛᴏ ᴠᴇʀɪꜰʏ ⁉️", url=HOWTOVERIFY)
         ]]
         await message.reply_text(
             text="<b>👋 ʜᴇʏ ᴛʜᴇʀᴇ,\n\n📌 <u>ʏᴏᴜ'ʀᴇ ɴᴏᴛ ᴠᴇʀɪꜰɪᴇᴅ ᴛᴏᴅᴀʏ, ᴘʟᴇᴀꜱᴇ ᴠᴇʀɪꜰʏ ᴀɴᴅ ɢᴇᴛ ᴜɴʟɪᴍɪᴛᴇᴅ ᴀᴄᴄᴇꜱꜱ ᴛɪʟʟ ɴᴇxᴛ ᴠᴇʀɪꜰɪᴄᴀᴛɪᴏɴ</u>.</b>",
@@ -556,10 +557,10 @@ async def start(client, message):
         reply_markup=InlineKeyboardMarkup(
             [
              [
-              InlineKeyboardButton('🚀 Fᴀꜱᴛ Dᴏᴡɴʟᴏᴀᴅ / Wᴀᴛᴄʜ Oɴʟɪɴᴇ 🧿', callback_data=f'generate_stream_link:{file_id}'),
+              InlineKeyboardButton('🚀 ꜰᴀꜱᴛ ᴅᴏᴡɴʟᴏᴀᴅ / ᴡᴀᴛᴄʜ ᴏɴʟɪɴᴇ 🧿', callback_data=f'generate_stream_link:{file_id}'),
              ],
              [
-              InlineKeyboardButton('📌 Jᴏɪɴ Uᴘᴅᴀᴛᴇꜱ Cʜᴀɴɴᴇʟ 📌', url=f'https://t.me/Kutty_LinkZz') 
+              InlineKeyboardButton('📌 ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ 📌', url=f'https://t.me/HP_MOVIES_WORLD') #Don't change anything without contacting me @LazyDeveloperr
              ]
             ]
         )
@@ -570,7 +571,7 @@ async def start(client, message):
     k = await client.send_message(chat_id = message.from_user.id, text=f"<b>❗️ <u>ɪᴍᴘᴏʀᴛᴀɴᴛ</u> ❗️</b>\n\n<b>ᴛʜɪꜱ ᴠɪᴅᴇᴏ / ꜰɪʟᴇ ᴡɪʟʟ ʙᴇ ᴅᴇʟᴇᴛᴇᴅ ɪɴ</b> <b><u>10 ᴍɪɴᴜᴛᴇꜱ</u> </b><b>(ᴅᴜᴇ ᴛᴏ ᴄᴏᴘʏʀɪɢʜᴛ ɪꜱꜱᴜᴇꜱ).</b>\n\n<b><i>📌 ᴘʟᴇᴀꜱᴇ ꜰᴏʀᴡᴀʀᴅ ᴛʜɪꜱ ᴠɪᴅᴇᴏ / ꜰɪʟᴇ ᴛᴏ ꜱᴏᴍᴇᴡʜᴇʀᴇ ᴇʟꜱᴇ ᴀɴᴅ ꜱᴛᴀʀᴛ ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ ᴛʜᴇʀᴇ.</i></b>")
     await asyncio.sleep(600)
     await msg.delete()
-    await k.edit_text("<b>ʏᴏᴜʀ ᴠɪᴅᴇᴏ / Fɪʟᴇ Iꜱ Sᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ Dᴇʟᴇᴛᴇᴅ !!\n\nᴄʟɪᴄᴋ ʙᴇʟᴏᴡ ʙᴜᴛᴛᴏɴ ᴛᴏ ɢᴇᴛ ʏᴏᴜʀ ᴅᴇʟᴇᴛᴇᴅ ᴠɪᴅᴇᴏ / ꜰɪʟᴇ 👇</b>",reply_markup=InlineKeyboardMarkup(btn))
+    await k.edit_text("<b>ʏᴏᴜʀ ᴠɪᴅᴇᴏ / ꜰɪʟᴇ ɪꜱ ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ ᴅᴇʟᴇᴛᴇᴅ !!\n\nᴄʟɪᴄᴋ ʙᴇʟᴏᴡ ʙᴜᴛᴛᴏɴ ᴛᴏ ɢᴇᴛ ʏᴏᴜʀ ᴅᴇʟᴇᴛᴇᴅ ᴠɪᴅᴇᴏ / ꜰɪʟᴇ 👇</b>",reply_markup=InlineKeyboardMarkup(btn))
     return  
 
 @Client.on_message(filters.command('channel') & filters.user(ADMINS))
@@ -685,7 +686,7 @@ async def delete_all_index(bot, message):
 @Client.on_callback_query(filters.regex(r'^autofilter_delete'))
 async def delete_all_index_confirm(bot, message):
     await Media.collection.drop()
-    await message.answer('Mᴀɪɴᴛᴀɪɴᴇᴅ Bʏ : Aᴅᴍɪɴ')
+    await message.answer('ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : ʜᴘ')
     await message.message.edit('ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ ᴅᴇʟᴇᴛᴇᴅ ᴀʟʟ ɪɴᴅᴇxᴇᴅ ꜰɪʟᴇꜱ ✅')
 
 
@@ -849,9 +850,9 @@ async def settings(client, message):
         
 
         btn = [[
-                InlineKeyboardButton("👤 Oᴘᴇɴ Iɴ Pʀɪᴠᴀᴛᴇ Cʜᴀᴛ 👤", callback_data=f"opnsetpm#{grp_id}")
+                InlineKeyboardButton("👤 ᴏᴘᴇɴ ɪɴ ᴘʀɪᴠᴀᴛᴇ ᴄʜᴀᴛ 👤", callback_data=f"opnsetpm#{grp_id}")
               ],[
-                InlineKeyboardButton("👥 Oᴘᴇɴ Hᴇʀᴇ 👥", callback_data=f"opnsetgrp#{grp_id}")
+                InlineKeyboardButton("👥 ᴏᴘᴇɴ ʜᴇʀᴇ 👥", callback_data=f"opnsetgrp#{grp_id}")
               ]]
 
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -933,7 +934,7 @@ async def requests(bot, message):
                         InlineKeyboardButton('ᴠɪᴇᴡ ʀᴇǫᴜᴇꜱᴛ', url=f"{message.reply_to_message.link}"),
                         InlineKeyboardButton('ꜱʜᴏᴡ ᴏᴘᴛɪᴏɴꜱ', callback_data=f'show_option#{reporter}')
                       ]]
-                reported_post = await bot.send_message(chat_id=REQST_CHANNEL, text=f"<b>📝 Rᴇǫᴜᴇꜱᴛ : <u>{content}</u>\n\n📚 ʀᴇᴘᴏʀᴛᴇᴅ ʙʏ : {mention}\n📖 ʀᴇᴘᴏʀᴛᴇʀ ɪᴅ : {reporter}\n\n©️ Itachi Uchiha</b>", reply_markup=InlineKeyboardMarkup(btn))
+                reported_post = await bot.send_message(chat_id=REQST_CHANNEL, text=f"<b>📝 ʀᴇǫᴜᴇꜱᴛ : <u>{content}</u>\n\n📚 ʀᴇᴘᴏʀᴛᴇᴅ ʙʏ : {mention}\n📖 ʀᴇᴘᴏʀᴛᴇʀ ɪᴅ : {reporter}\n\n©️ ᴛʜᴇ ᴍᴏᴠɪᴇ ᴘʀᴏᴠɪᴅᴇʀ™</b>", reply_markup=InlineKeyboardMarkup(btn))
                 success = True
             elif len(content) >= 3:
                 for admin in ADMINS:
@@ -941,7 +942,7 @@ async def requests(bot, message):
                         InlineKeyboardButton('ᴠɪᴇᴡ ʀᴇǫᴜᴇꜱᴛ', url=f"{message.reply_to_message.link}"),
                         InlineKeyboardButton('ꜱʜᴏᴡ ᴏᴘᴛɪᴏɴꜱ', callback_data=f'show_option#{reporter}')
                       ]]
-                    reported_post = await bot.send_message(chat_id=admin, text=f"<b>📝 Rᴇǫᴜᴇꜱᴛ : <u>{content}</u>\n\n📚 ʀᴇᴘᴏʀᴛᴇᴅ ʙʏ : {mention}\n📖 ʀᴇᴘᴏʀᴛᴇʀ ɪᴅ : {reporter}\n\n©️ Itachi Uchiha</b>", reply_markup=InlineKeyboardMarkup(btn))
+                    reported_post = await bot.send_message(chat_id=admin, text=f"<b>📝 ʀᴇǫᴜᴇꜱᴛ : <u>{content}</u>\n\n📚 ʀᴇᴘᴏʀᴛᴇᴅ ʙʏ : {mention}\n📖 ʀᴇᴘᴏʀᴛᴇʀ ɪᴅ : {reporter}\n\n©️ ᴛʜᴇ ᴍᴏᴠɪᴇ ᴘʀᴏᴠɪᴅᴇʀ™</b>", reply_markup=InlineKeyboardMarkup(btn))
                     success = True
             else:
                 if len(content) < 3:
@@ -968,7 +969,7 @@ async def requests(bot, message):
                         InlineKeyboardButton('ᴠɪᴇᴡ ʀᴇǫᴜᴇꜱᴛ', url=f"{message.link}"),
                         InlineKeyboardButton('ꜱʜᴏᴡ ᴏᴘᴛɪᴏɴꜱ', callback_data=f'show_option#{reporter}')
                       ]]
-                reported_post = await bot.send_message(chat_id=REQST_CHANNEL, text=f"<b>📝 Rᴇǫᴜᴇꜱᴛ : <u>{content}</u>\n\n📚 ʀᴇᴘᴏʀᴛᴇᴅ ʙʏ : {mention}\n📖 ʀᴇᴘᴏʀᴛᴇʀ ɪᴅ : {reporter}\n\n©️ Itachi Uchiha</b>", reply_markup=InlineKeyboardMarkup(btn))
+                reported_post = await bot.send_message(chat_id=REQST_CHANNEL, text=f"<b>📝 ʀᴇǫᴜᴇꜱᴛ : <u>{content}</u>\n\n📚 ʀᴇᴘᴏʀᴛᴇᴅ ʙʏ : {mention}\n📖 ʀᴇᴘᴏʀᴛᴇʀ ɪᴅ : {reporter}\n\n©️ ᴛʜᴇ ᴍᴏᴠɪᴇ ᴘʀᴏᴠɪᴅᴇʀ™</b>", reply_markup=InlineKeyboardMarkup(btn))
                 success = True
             elif len(content) >= 3:
                 for admin in ADMINS:
@@ -976,7 +977,7 @@ async def requests(bot, message):
                         InlineKeyboardButton('ᴠɪᴇᴡ ʀᴇǫᴜᴇꜱᴛ', url=f"{message.link}"),
                         InlineKeyboardButton('ꜱʜᴏᴡ ᴏᴘᴛɪᴏɴꜱ', callback_data=f'show_option#{reporter}')
                       ]]
-                    reported_post = await bot.send_message(chat_id=admin, text=f"<b>📝 Rᴇǫᴜᴇꜱᴛ : <u>{content}</u>\n\n📚 ʀᴇᴘᴏʀᴛᴇᴅ ʙʏ : {mention}\n📖 ʀᴇᴘᴏʀᴛᴇʀ ɪᴅ : {reporter}\n\n©️ Itachi Uchiha</b>", reply_markup=InlineKeyboardMarkup(btn))
+                    reported_post = await bot.send_message(chat_id=admin, text=f"<b>📝 ʀᴇǫᴜᴇꜱᴛ : <u>{content}</u>\n\n📚 ʀᴇᴘᴏʀᴛᴇᴅ ʙʏ : {mention}\n📖 ʀᴇᴘᴏʀᴛᴇʀ ɪᴅ : {reporter}\n\n©️ ᴛʜᴇ ᴍᴏᴠɪᴇ ᴘʀᴏᴠɪᴅᴇʀ™</b>", reply_markup=InlineKeyboardMarkup(btn))
                     success = True
             else:
                 if len(content) < 3:
@@ -1003,7 +1004,7 @@ async def requests(bot, message):
                         InlineKeyboardButton('ᴠɪᴇᴡ ʀᴇǫᴜᴇꜱᴛ', url=f"{message.link}"),
                         InlineKeyboardButton('ꜱʜᴏᴡ ᴏᴘᴛɪᴏɴꜱ', callback_data=f'show_option#{reporter}')
                       ]]
-                reported_post = await bot.send_message(chat_id=REQST_CHANNEL, text=f"<b>📝 Rᴇǫᴜᴇꜱᴛ : <u>{content}</u>\n\n📚 ʀᴇᴘᴏʀᴛᴇᴅ ʙʏ : {mention}\n📖 ʀᴇᴘᴏʀᴛᴇʀ ɪᴅ : {reporter}\n\n©️ Itachi Uchiha</b>", reply_markup=InlineKeyboardMarkup(btn))
+                reported_post = await bot.send_message(chat_id=REQST_CHANNEL, text=f"<b>📝 ʀᴇǫᴜᴇꜱᴛ : <u>{content}</u>\n\n📚 ʀᴇᴘᴏʀᴛᴇᴅ ʙʏ : {mention}\n📖 ʀᴇᴘᴏʀᴛᴇʀ ɪᴅ : {reporter}\n\n©️ ᴛʜᴇ ᴍᴏᴠɪᴇ ᴘʀᴏᴠɪᴅᴇʀ™</b>", reply_markup=InlineKeyboardMarkup(btn))
                 success = True
             elif len(content) >= 3:
                 for admin in ADMINS:
@@ -1011,7 +1012,7 @@ async def requests(bot, message):
                         InlineKeyboardButton('ᴠɪᴇᴡ ʀᴇǫᴜᴇꜱᴛ', url=f"{message.link}"),
                         InlineKeyboardButton('ꜱʜᴏᴡ ᴏᴘᴛɪᴏɴꜱ', callback_data=f'show_option#{reporter}')
                       ]]
-                    reported_post = await bot.send_message(chat_id=admin, text=f"<b>📝 Rᴇǫᴜᴇꜱᴛ : <u>{content}</u>\n\n📚 ʀᴇᴘᴏʀᴛᴇᴅ ʙʏ : {mention}\n📖 ʀᴇᴘᴏʀᴛᴇʀ ɪᴅ : {reporter}\n\n©️ Itachi Uchiha</b>", reply_markup=InlineKeyboardMarkup(btn))
+                    reported_post = await bot.send_message(chat_id=admin, text=f"<b>📝 ʀᴇǫᴜᴇꜱᴛ : <u>{content}</u>\n\n📚 ʀᴇᴘᴏʀᴛᴇᴅ ʙʏ : {mention}\n📖 ʀᴇᴘᴏʀᴛᴇʀ ɪᴅ : {reporter}\n\n©️ ᴛʜᴇ ᴍᴏᴠɪᴇ ᴘʀᴏᴠɪᴅᴇʀ™</b>", reply_markup=InlineKeyboardMarkup(btn))
                     success = True
             else:
                 if len(content) < 3:
@@ -1230,7 +1231,7 @@ async def settutorial(bot, message):
     else:
         pass
     if len(message.command) == 1:
-        return await message.reply("<b>ɢɪᴠᴇ ᴍᴇ ᴀ ᴛᴜᴛᴏʀɪᴀʟ ʟɪɴᴋ ᴀʟᴏɴɢ ᴡɪᴛʜ ᴛʜɪꜱ ᴄᴏᴍᴍᴀɴᴅ.\n\nᴜꜱᴀɢᴇ : /set_tutorial <code>https://t.me/TamilMovieszUpdate/21</code></b>")
+        return await message.reply("<b>ɢɪᴠᴇ ᴍᴇ ᴀ ᴛᴜᴛᴏʀɪᴀʟ ʟɪɴᴋ ᴀʟᴏɴɢ ᴡɪᴛʜ ᴛʜɪꜱ ᴄᴏᴍᴍᴀɴᴅ.\n\nᴜꜱᴀɢᴇ : /set_tutorial <code>https://t.me/HowToOpenHP</code></b>")
     elif len(message.command) == 2:
         reply = await message.reply_text("<b>ᴘʟᴇᴀꜱᴇ ᴡᴀɪᴛ...</b>")
         tutorial = message.command[1]
@@ -1238,7 +1239,7 @@ async def settutorial(bot, message):
         await save_group_settings(grpid, 'is_tutorial', True)
         await reply.edit_text(f"<b>✅ ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ ᴀᴅᴅᴇᴅ ᴛᴜᴛᴏʀɪᴀʟ\n\nʏᴏᴜʀ ɢʀᴏᴜᴘ : {title}\n\nʏᴏᴜʀ ᴛᴜᴛᴏʀɪᴀʟ : <code>{tutorial}</code></b>")
     else:
-        return await message.reply("<b>ʏᴏᴜ ᴇɴᴛᴇʀᴇᴅ ɪɴᴄᴏʀʀᴇᴄᴛ ꜰᴏʀᴍᴀᴛ !\nᴄᴏʀʀᴇᴄᴛ ꜰᴏʀᴍᴀᴛ : /set_tutorial <code>https://t.me/TamilMovieszUpdate/21</code></b>")
+        return await message.reply("<b>ʏᴏᴜ ᴇɴᴛᴇʀᴇᴅ ɪɴᴄᴏʀʀᴇᴄᴛ ꜰᴏʀᴍᴀᴛ !\nᴄᴏʀʀᴇᴄᴛ ꜰᴏʀᴍᴀᴛ : /set_tutorial <code>https://t.me/HowToOpenHP</code></b>")
 
 @Client.on_message(filters.command("remove_tutorial"))
 async def removetutorial(bot, message):
